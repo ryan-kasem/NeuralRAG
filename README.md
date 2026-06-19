@@ -8,11 +8,11 @@ A production-grade Retrieval-Augmented Generation (RAG) system built from scratc
 
 Standard RAG systems use off-the-shelf embeddings and basic vector search. NeuralRAG adds:
 
-- **SimCSE fine-tuning** — trains the embedding model with in-batch contrastive loss so it learns domain-specific similarity, not just generic sentence similarity
-- **Two-stage retrieval** — FAISS bi-encoder for fast candidate retrieval → cross-encoder reranker for precision scoring
-- **MMR diversity filtering** — eliminates redundant chunks from the retrieved context
-- **HyDE query expansion** — generates a hypothetical answer to the query and uses *that* as the search vector, bridging the gap between short questions and long document passages
-- **RAGAS-style evaluation** — measures context precision, context recall, faithfulness, and answer relevance with a harmonic mean "NeuralRAG Score"
+- **SimCSE fine-tuning** - trains the embedding model with in-batch contrastive loss so it learns domain-specific similarity, not just generic sentence similarity
+- **Two-stage retrieval** - FAISS bi-encoder for fast candidate retrieval → cross-encoder reranker for precision scoring
+- **MMR diversity filtering** - eliminates redundant chunks from the retrieved context
+- **HyDE query expansion** - generates a hypothetical answer to the query and uses *that* as the search vector, bridging the gap between short questions and long document passages
+- **RAGAS-style evaluation** - measures context precision, context recall, faithfulness, and answer relevance with a harmonic mean "NeuralRAG Score"
 
 ---
 
@@ -118,7 +118,7 @@ NeuralRAG/
 
 ## References
 
-- Lewis et al. (2020) — [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
-- Gao et al. (2021) — [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
-- Gao et al. (2022) — [Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)](https://arxiv.org/abs/2212.10496)
-- Es et al. (2023) — [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
+- Lewis et al. (2020) - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
+- Gao et al. (2021) - [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
+- Gao et al. (2022) - [Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)](https://arxiv.org/abs/2212.10496)
+- Es et al. (2023) - [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
