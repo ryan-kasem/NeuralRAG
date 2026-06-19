@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+checkpoints/
+data/faiss.index
+data/*.pkl
+*.egg-info/
+.env
+wandb/

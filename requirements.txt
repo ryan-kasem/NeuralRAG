@@ -1,0 +1,22 @@
+# Core ML
+torch>=2.1.0
+transformers>=4.36.0
+sentence-transformers>=2.3.0
+
+# Vector search
+faiss-cpu>=1.7.4  # swap to faiss-gpu if you have a CUDA GPU
+
+# API
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+
+# LLM integration — openai library pointed at local Ollama server (no API key needed)
+# Install Ollama from https://ollama.com, then: ollama pull llama3.2
+openai>=1.10.0
+
+# Training utilities
+wandb>=0.16.0
+
+# Data
+numpy>=1.26.0
